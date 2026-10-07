@@ -1,150 +1,71 @@
 {
-    "projects" : [
-        {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
-            ]
-        },
-        {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
-            ]
-        },
-        {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
-            ]
-        }
+    "projects": [
+      {
+        "image": "images/projects/aventra.jpeg",
+        "title": "Aventra – Customer Management System",
+        "bodyText": "A full-stack CRM application designed to simplify customer management. Users can add, update, view, search, and delete customer records while tracking their current status. The application uses React.js and Tailwind CSS for the interface, with Node.js and Express.js powering the REST APIs. PostgreSQL with Prisma handles data management, while Clerk provides user authentication.",
+        "links": [
+          {
+            "text": "GitHub",
+            "href": "https://github.com/Harshitaa456/customer-management-system"
+          },
+          {
+            "text": "Live",
+            "href": "https://customer-management-system-sigma-liard.vercel.app/"
+          }
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "Prisma",
+          "Clerk"
+        ]
+      },
+      {
+        "image": "images/projects/quickbites.jpeg",
+        "title": "Food Ordering Website",
+        "bodyText": "A responsive food ordering application built with React.js and Tailwind CSS. It provides an easy-to-navigate interface where users can explore available dishes, view individual food details, and place orders through the application.",
+        "links": [
+          {
+            "text": "GitHub",
+            "href": "https://github.com/Harshitaa456/foodie-app"
+          },
+          {
+            "text": "Live",
+            "href": "https://foodie-app12.netlify.app/"
+          }
+        ],
+        "tags": [
+          "React.js",
+          "Tailwind CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "image": "images/projects/bloomin.jpeg",
+        "title": "Bloomin – A Small Business Digitiser",
+        "bodyText": "A full-stack platform being developed to help small businesses establish an online presence and manage their digital storefronts. Customers can browse products, add items to a cart, and place and track orders, while sellers can manage products through a dedicated dashboard and receive order alerts. The backend is built with Node.js, Express.js, and TypeScript, with PostgreSQL and Firebase Authentication handling data and secure access.",
+        "links": [
+          {
+            "text": "GitHub",
+            "href": "https://github.com/mystic0l/bloomin-fe"
+          },
+          {
+            "text": "Live",
+            "href": "https://bloomin-virid.vercel.app/"
+          }
+        ],
+        "tags": [
+          "React.js",
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "PostgreSQL",
+          "Firebase Authentication"
+        ]
+      }
     ]
-}
+  }

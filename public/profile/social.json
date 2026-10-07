@@ -2,19 +2,15 @@
     "social": [
         {
             "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "href": "https://www.linkedin.com/in/harshita-gaur-0a5224362/"
         },
         {
             "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
-        },
-        {
-            "network" : "leetcode",
-            "href": "https://leetcode.com/"
+            "href": "https://github.com/Harshitaa456"
         },
         {
             "network" : "email",
-            "href": "mailto:test@test.com"
+            "href": "mailto:gaur02297@gmail.com"
         }
     ]
 }
