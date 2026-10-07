@@ -1,42 +1,42 @@
-import React, { useState, useEffect, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import FallbackSpinner from './components/FallbackSpinner';
+import React from 'react';
 import NavBar from './components/NavBar';
+
 import Home from './components/Home';
-import endpoints from './constants/endpoints';
+import About from './components/About';
+import Skills from './components/Skills';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 function MainApp() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(endpoints.routes, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
-
   return (
     <div className="MainApp">
       <NavBar />
+
       <main className="main">
-        <Suspense fallback={<FallbackSpinner />}>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            {data
-              && data.sections.map((route) => {
-                const SectionComponent = React.lazy(() => import(`./components/${route.component}.jsx`));
-                return (
-                  <Route
-                    key={route.headerTitle}
-                    path={route.path}
-                    element={<SectionComponent header={route.headerTitle} />}
-                  />
-                );
-              })}
-          </Routes>
-        </Suspense>
+        <section id="home">
+          <Home />
+        </section>
+
+        <section id="about">
+          <About header="About" />
+        </section>
+
+        <section id="skills">
+          <Skills header="Skills" />
+        </section>
+
+        <section id="education">
+          <Education header="Education" />
+        </section>
+
+        <section id="experience">
+          <Experience header="Experience" />
+        </section>
+
+        <section id="projects">
+          <Projects header="Projects" />
+        </section>
       </main>
     </div>
   );

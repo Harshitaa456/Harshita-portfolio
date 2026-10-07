@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
-import { Link } from 'react-router-dom';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -38,7 +37,9 @@ function Home() {
             {data?.status && (
               <span className="hero-eyebrow">{data.status}</span>
             )}
+
             <h1 className="hero-name">{data?.name}</h1>
+
             <div className="hero-roles">
               <span>I&apos;m&nbsp;</span>
               <Typewriter
@@ -49,20 +50,36 @@ function Home() {
                 }}
               />
             </div>
-            {data?.tagline && <p className="hero-tagline">{data.tagline}</p>}
+
+            {data?.tagline && (
+              <p className="hero-tagline">{data.tagline}</p>
+            )}
+
             <div className="hero-cta">
-              <Link className="btn-pill btn-accent" to="/projects">
+              <a
+                className="btn-pill btn-accent"
+                href="#projects"
+              >
                 View my work
-              </Link>
-              <Link className="btn-pill btn-ghost" to="/about">
+              </a>
+
+              <a
+                className="btn-pill btn-ghost"
+                href="#about"
+              >
                 About me
-              </Link>
+              </a>
             </div>
           </div>
 
           <div className="tile tile--accent monogram span-2">
-            <span className="monogram-mark">{initialsOf(data?.name)}</span>
-            <span className="monogram-label">{data?.name}</span>
+            <span className="monogram-mark">
+              {initialsOf(data?.name)}
+            </span>
+
+            <span className="monogram-label">
+              {data?.name}
+            </span>
           </div>
 
           <div className="tile hero-social span-2">
@@ -72,7 +89,9 @@ function Home() {
         </div>
       </section>
     </Fade>
-  ) : <FallbackSpinner />;
+  ) : (
+    <FallbackSpinner />
+  );
 }
 
 export default Home;
