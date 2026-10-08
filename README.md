@@ -53,3 +53,6 @@ A responsive food ordering application where users can explore available dishes,
 A platform designed to help small businesses establish an online presence and manage their digital storefronts.
 
 **Tech:** React.js, Node.js, Express.js, TypeScript, PostgreSQL, Firebase Authentication
+<img width="1600" height="736" alt="customerstorefront" src="https://github.com/user-attachments/assets/43a395d7-7464-42ef-9a10-6205ccad8f71" />
+
+
